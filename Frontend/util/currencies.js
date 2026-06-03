@@ -1,11 +1,19 @@
-const currencies={
+const currencies = {
     USD: {
-        name:"United states Dollar",
-        flag:"🏴"
+        name: "United states Dollar",
+        flag: "🏴"
     },
     EUR: {
-        name:"Euro",
-        flag:"🏴"
+        name: "Euro",
+        flag: "🏴"
+    },
+    EUT: {
+        name: "Euro",
+        flag: "🏴"
+    },
+    INR: {
+        name: "Euro",
+        flag: "🏴"
     }
 
 };

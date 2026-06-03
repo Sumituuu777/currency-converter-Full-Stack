@@ -1,25 +1,15 @@
 import currencies from "../../util/currencies"
-function CureencySelector() {
+function CureencySelector({ label, value, onChange }) {
     return (
         <>
-            <select name="sourceCurrency" id="sourceCurrency">
+            <label htmlFor={`currency-${label}`}>{label}</label>
+            <select name={`currency-${label}`} id={`currency-${label}`} value={value} onChange={onChange} >
                 {
-                    Object.keys(currencies).map(currency => {
-                        <option key={currency}
-                            value={currency}>
-                            {currencies[currency].flag}{currency}-{currencies[currency].name}
+                    Object.entries(currencies).map(([code, data]) => (
+                        <option key={code} value={code}>
+                            {data.flag} {code} - {data.name}
                         </option>
-                    })
-                }
-            </select>
-            <select name="sourceCurrency" id="sourceCurrency">
-                {
-                    Object.keys(currencies).map(currency => {
-                        <option key={currency}
-                            value={currency}>
-                            {currencies[currency].flag}{currency}-{currencies[currency].name}
-                        </option>
-                    })
+                    ))
                 }
             </select>
         </>
