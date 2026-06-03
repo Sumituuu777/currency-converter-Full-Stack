@@ -11,7 +11,6 @@ class ExchangeRates{
 
     async getRates(){
         const url=`${this.baseurl}${this.apiKey}/latest/INR`;
-        console.log(url);
         const response=await axios.get(url);
          
         if(response.status==200 || response.data.result==="success"){
