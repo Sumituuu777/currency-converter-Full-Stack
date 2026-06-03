@@ -1,25 +1,28 @@
 {
-  "name": "currency-converter",
+  "name": "currency-converter-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "It is a full stack app that uses convert currency of countries across the world.\r <li>It makes only one api call in begining and then store data to lower number of api calls.\r <li>Tech Stack :- Frontend(React) Backend(Node,Express)</li>\r <li> made it to learn about connecting Frontend with backend </li>",
+  "homepage": "https://github.com/Sumituuu777/currency-converter-Full-Stack#readme",
+  "bugs": {
+    "url": "https://github.com/Sumituuu777/currency-converter-Full-Stack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumituuu777/currency-converter-Full-Stack.git"
+  },
+  "license": "ISC",
+  "author": "sumit kumar",
+  "type": "commonjs",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "free-port": "kill-port 3052",
-    "start": "app.js"
-  },
-  "keywords": [],
-  "author": "sumit kumar",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
+    "start": "node app.js"
   },
   "dependencies": {
-    "axios": "^1.16.1",
+    "axios": "^1.17.0",
     "body-parser": "^2.2.2",
     "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "kill-port": "^2.0.1"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
   }
 }

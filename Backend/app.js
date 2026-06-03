@@ -1,8 +1,8 @@
 //core modules
-const http=require('http');
 const express=require('express');
 const bodyparser=require('body-parser');
 const cors=require("cors")
+
 
 //local modules
 const exchangeRouter=require("./routers/exchangeRouter")
@@ -17,7 +17,7 @@ app.use(cors());
 app.use("/api",exchangeRouter)
 app.use(errorController.get404)
 
-const PORT=3000;
+const PORT=3051;
 async function init() {
     await exchangeRateServices.getRates();
 
