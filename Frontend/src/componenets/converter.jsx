@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import CureencySelector from "./CureencySelector";
+import CureencySelector from "./cureencySelector";
 
 function Converter() {
   const textInput = useRef();
@@ -12,7 +12,7 @@ function Converter() {
   const convertHandler = () => {
 
     setLoading(true);
-    fetch("http://localhost:3051/api/convert", {
+    fetch("https://currency-converter-full-stack.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
