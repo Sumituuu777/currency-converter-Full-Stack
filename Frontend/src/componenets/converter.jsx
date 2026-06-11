@@ -12,7 +12,7 @@ function Converter() {
   const convertHandler = () => {
 
     setLoading(true);
-    fetch("https://currency-converter-full-stack.onrender.com", {
+    fetch("https://currency-converter-full-stack.onrender.com/api/convert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
