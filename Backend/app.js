@@ -17,7 +17,7 @@ app.use(cors());
 app.use("/api",exchangeRouter)
 app.use(errorController.get404)
 
-const PORT=3051;
+const PORT=process.env.PORT || 3051;
 async function init() {
     await exchangeRateServices.getRates();
 
