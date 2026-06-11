@@ -24,7 +24,7 @@ function Converter() {
       }),
     })
       .then((res) => res.json())
-      .then((data) => setConvertedAmount(data.targetAmount))
+      .then((data) => setConvertedAmount(Number(data.targetAmount).toFixed(5)))
       .finally(() => setLoading(false));
   };
 
